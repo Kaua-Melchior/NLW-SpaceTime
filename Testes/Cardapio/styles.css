@@ -1,0 +1,154 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+
+.cardapio h1{
+    text-align: center;
+}
+
+.cardapio {
+    background-color: #444; /* Tom de cinza mais escuro */
+    color: #fff;
+    padding: 1.5%;
+
+}
+
+.cardapio h1 {
+    color: #ccc; /* Tom de cinza mais claro para o título */
+}
+
+.item {
+    justify-content: space-between;
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+    background-color: #333; /* Tom de cinza mais escuro para os asides */
+    border-radius: 5px; /* Adicionando bordas arredondadas nos asides */
+}
+
+.item img {
+    width: 300px; /* Aumentando a largura da imagem */
+    height: 300px; /* Aumentando a altura da imagem */
+    object-fit: cover;
+    margin: 10px;
+    margin-left: 20px ; /* Reduzindo a margem à esquerda */
+    border-radius: 25%;
+    flex-shrink: 0; /* Evita que a imagem diminua de tamanho para caber na linha */
+}
+
+
+.item .info {
+    flex-grow: 1;
+    margin: 10px; /* Adicionando margem em torno do texto */
+}
+
+.item h2 {
+    text-align: center;
+    font-size: 150%;
+    margin: 0;
+}
+
+.item p {
+    font-size: 80%;
+    margin: 5px 0;
+}
+
+.item .price {
+    font-size: 100%;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.separator {
+    border: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+/* Adicione este trecho para remover margens padrão */
+body, aside {
+    margin: 0;
+}
+
+/* Adicione este trecho para adicionar padding na div que envolve todo o conteúdo */
+.container {
+    padding: 20px;
+}
+
+/* ... (código anterior) ... */
+
+.category {
+    margin-top: 40px; /* Adicionando espaço entre as categorias */
+}
+
+.category h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.combo-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espaço entre os combos */
+}
+
+.combo-container .item {
+    width: calc(100% - 10px); /* 50% do container com uma margem entre */
+}
+
+/* ... (seu código anterior) ... */
+
+.combo-container .item.combo {
+    background-image: url('marca de pneu.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centraliza o texto */
+}
+
+.combo-container .item.combo .combo-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.combo-container .item.combo h2,
+.combo-container .item.combo  {
+    margin: 10px 0; /* Adiciona margem entre o nome e o preço */
+}
+
+.combo-container .item.combo img {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    margin-top: 10px; /* Adiciona espaço entre a imagem e o preço */
+}
+
+.combo-container .item.combo .description {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    border-radius: 10px;
+    width: 95%; /* Define a largura da descrição */
+}
+
+/* ... (seu código anterior) ... */
+
+.price {
+    
+    text-align: center; /* Centraliza o preço */
+    margin-top: 10px; /* Adiciona margem acima do preço */
+}
+
+.price p{
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 150%;
+}
+/* ... (seu código posterior) ... */
+
+
